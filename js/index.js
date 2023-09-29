@@ -1,0 +1,1 @@
+var coverflow = $("#coverflow").flipster();

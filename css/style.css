@@ -391,3 +391,248 @@ header
   }
 }
 /* ============ mobile view .end// ============ */
+
+.slider-contant .slider .carousel .carousel-inner .carousel-item img.h{
+  height: 80vh;
+  animation-name: example;
+  animation-duration: 5s;
+  /* transition: transform 3s; */
+  animation-iteration-count: infinite;
+  animation-direction: alternate;  
+}
+.slider-contant .slider .carousel .carousel-control-prev{
+ margin-left: 60px; 
+}
+
+@keyframes example {
+  /* 0%   {transform: scale(1,1);} */
+  
+  100% {
+    -ms-transform: scale(1.5); 
+    -webkit-transform: scale(1.5);
+    transform: scale(2); }
+}
+
+
+.slider-contant .slider .carousel .carousel-indicators ol li i{
+
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+
+  color: #82ae46;
+}
+/* .slider-contant .slider .carousel .carousel-indicators ol li i.active{
+
+} */
+@media (max-width: 991px) {
+  .slider-contant .slider .carousel .carousel-indicators ol li i{
+
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+  
+    
+  }
+}
+
+.slider-contant .adds .arrow {
+  position: absolute;
+  top: 50%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  /* transform: rotate(90deg); */
+  cursor: pointer;
+  z-index: 5;
+}
+
+.slider-contant .adds span {
+  display: block;
+  width: 1.5vw;
+  height: 1.5vw;
+  border-bottom: 5px solid rgb(7, 7, 7);
+  border-right: 5px solid rgb(8, 8, 8);
+  transform: rotate(45deg);
+  margin: -10px;
+  animation: animate 2s infinite;
+}
+
+.slider-contant .adds:nth-child(2) {
+  animation-delay: -0.2s;
+}
+
+.slider-contant .adds:nth-child(3) {
+  animation-delay: -0.4s;
+} 
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+    transform: rotate(45deg) translate(-20px, -20px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(45deg) translate(20px, 20px);
+  }
+}
+
+.slider-contant .arr2 {
+  position: absolute;
+  visibility: hidden;
+  top: 70%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  /* transform: rotate(90deg); */
+  cursor: pointer;
+  z-index: 5;
+  border: #82ae46 solid 10px;
+  width: 250px;
+}
+.slider-contant .arr2 h4 {
+  width: 100%;
+  height: 30px;
+  padding: 0;
+  color: #ffffff;
+  background-color:#82ae46 ;
+
+  
+}
+.slider-contant .arr2 img {
+  width: 100%;
+  height: 200px;
+  margin-top: -8px;
+}
+
+.slider-contant .arrow:hover + .arr2 {
+  visibility: visible;
+}
+
+.lift {
+  z-index: 4;
+  position: absolute;
+  top: 50%;
+  width: 6%;
+  height: 300px;
+  background-color: #82ae46;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 600px) {
+  .arrow,
+  .lift {
+    display: none;
+  }
+}
+@media screen and (max-width: 668px) {
+  .arrow
+  {
+    top: 80%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+  }
+}
+@media screen and (max-width: 950px) {
+  .arrow {
+    top: 80%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+  }
+  .lift {
+    top: 100%;
+    left: 6%;
+    transform: translate(-50%, -50%);
+    width: 12%;
+  }
+}
+
+
+.three .container .row .one1 {
+  /* width: 25%; */
+  height: 400px;
+  position: relative;
+  margin-bottom:20px ;
+}
+.three .container .row .one1 .item1 {
+  width: 100%;
+  height: 400px;
+  position: relative;
+}
+.three .container .row .one1 .item1 img {
+  width: 100%;
+  height: 400px;
+}
+.three .container .row .one1 .item1 .contant {
+  position: absolute;
+  top: 54%;
+  right: 30%;
+  font-weight: bold;
+  color: #f8f5f5;
+}
+.three .container .row .one1 .item1 .contant .shop_button {
+  background-color: #82ae46;
+  color: #f8f5f5;
+  border-radius: 0;
+  font-size: small;
+  font-weight: bold;
+}
+.three .container .row .one1 .item1 .imgs {
+  width: 100%;
+  height: 350px;
+}
+
+.three .container .row .one1 figure{
+  margin-bottom: 20px;
+}
+.three .container .row .one1 figure figcaption{
+  background-color: #f8f5f557;
+}
+
+.three .container .row .one1 figure figcaption h3 .btnpos{
+  position: absolute;
+  transform: translate(50%,50%);
+  top: 50%;
+  font-weight: bolder;
+}
+.three .container .row .one1 figure figcaption h3 .btnpos:hover{
+  /* font-weight: bolder; */
+  background-color: #82ae46;
+  color: #ddd;
+  border: #82ae46 1px solid;
+}
+
+
+
+
+.three .container .row .one1 .add {
+  background-color: black;
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 12px;
+  padding: 5px;
+  z-index: 1;
+  font-size: smaller;
+}
+
+
+
+
+.flip_star .container .contant h5{
+  color: #82ae46;
+  font-family: cursive;
+}
+.flip_star .container .contant h1{
+  font-weight: bold;
+}
+.flip_star .container .filp .demo {
+  padding: 6em 2em;
+}
+
+.flip_star .container .filp .demo .flipster {
+  margin: 0 -2em;
+}
