@@ -988,34 +988,100 @@ header
 
 .comment {
   margin-top: 90px;
-
+}
+.comment .container .contant {
+  margin-bottom: 40px;
+}
+.comment .container .contant h5 {
+  color: #82ae46;
+  font-family: cursive;
+}
+.comment .container .contant h1 {
+  font-weight: bold;
 }
 .comment .container .row .columns .owl-carousel .item {
   display: flex;
   justify-content: space-between;
 }
-.comment .container .row .columns .owl-carousel .item::before{
-content: "";
-position: absolute;
-top: 63%;
-margin-right:12px;
-width: 5px;
-height: 30px;
-background-color: #82ae46;
+.comment .container .row .columns .owl-carousel .item::before {
+  content: "";
+  position: absolute;
+  top: 63%;
+  margin-right: 12px;
+  width: 5px;
+  height: 30px;
+  background-color: #82ae46;
 }
-.comment .container .row .columns .owl-carousel .item img{
+.comment .container .row .columns .owl-carousel .item img {
   margin: auto;
   width: 100px;
   height: 100px;
   border-radius: 50%;
 }
-.comment .container .row .columns .owl-carousel .item p{
+.comment .container .row .columns .owl-carousel .item p {
   padding: 12px;
- margin-top: 40px;
- text-align: center;
+  margin-top: 40px;
+  text-align: center;
 }
 
-.comment .container .row .columns .owl-carousel .item h1{
- text-align: center;
- font-size: 20px;
+.comment .container .row .columns .owl-carousel .item h1 {
+  text-align: center;
+  font-size: 20px;
+}
+
+.contact {
+  margin-top: 90px;
+  background-color: #bfc2bb5d;
+}
+.contact .container {
+  padding-top: 12px;
+  padding-bottom: 30px;
+  margin-top: 40px;
+ }
+.contact .container .contant {
+  margin-bottom: 40px;
+}
+.contact .container .contant h5 {
+  color: #82ae46;
+  font-family: cursive;
+}
+.contact .container .row .inputs form textarea {
+  resize: none;
+}
+.contact .container .row .inputs form button {
+  background-color: #82ae46;
+  border-radius: 0;
+  color: whitesmoke;
+  font-weight: 500;
+  align-items: center;
+}
+iframe.fram {
+  width: 600px;
+  height: 320px;
+  border: 0px;
+}
+.footer {
+/* margin-top: 4%; */
+background-color: #bfc2bb5d;
+
+}
+.footer .container .row .one{
+margin-top: 2%;
+}
+.footer .container .row  p{
+font-size: 14px;
+padding: 0px;
+margin: 0px;
+}
+.footer .container .row .one .icons{
+width: 50%;
+}
+.footer .container .row .btn{
+background-color: #82ae46;
+border: 0px;
+color: #eff5f3;
+border-radius: 0%;
+}
+.copyrayting {
+ background-color: #bfc2bb5d;
 }
