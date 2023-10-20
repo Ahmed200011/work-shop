@@ -1,0 +1,105 @@
+.register .top {
+  background-color: #30323a;
+  height: 15px;
+}
+.register .top .color {
+  background-color: #82ae46;
+  width: 25%;
+  height: 15px;
+}
+.register .nav {
+  background-color: #ffffff;
+  height: 50px;
+}
+.register .nav span {
+  font-size: medium;
+  font-weight: 500;
+}
+.register .nav span:last-child {
+  align-items: center;
+  color: #82ae46;
+  margin-left: 10px;
+}
+
+.register .container .hr p{
+    position: absolute;
+    transform: translate(0%,-50%);
+    left: 0px;;
+    z-index: 1;
+    width: 12%;
+    height: 3px;
+    background-color: #82ae46;
+}
+.register .container form .name{
+   border-radius: 6px;
+   margin-top: 15px;
+ 
+
+}
+
+.register .container form button{
+  background-color: #82ae46;
+  color: #ffffff;
+  font-weight: 500;
+  border-radius: 0%;
+}
+.register .container form button:last-child{
+    background-color: #40588a;
+    margin-top: 10px;
+    color: #ffffff;
+    font-weight: 500;
+    border-radius: 0%;
+}
+.register .container .create .hr p{
+    position: absolute;
+    transform: translate(0%,-50%);
+    left: 0px;;
+    z-index: 1;
+    width: 12%;
+    height: 3px;
+    background-color: #82ae46;
+}
+.register .container .row .create form input{
+   border-radius: 0;
+}
+.register .container .row .create form .text {
+ margin-top: 11%;
+}
+.register .container .row .create form button{
+  background-color: #82ae46;
+  color: #ffffff;
+  font-weight: 500;
+  border-radius: 0%;
+}
+.register .container .row .create form button:last-child{
+    background-color: #40588a;
+    margin-top: 10px;
+    color: #ffffff;
+    font-weight: 500;
+    border-radius: 0%;
+}
+
+.suggested{
+  margin-top: 90px;
+}
+.suggested .container .hr p{
+  position: absolute;
+  transform: translate(0%,-50%);
+  left: 0px;;
+  z-index: 1;
+  width: 6%;
+  height: 3px;
+  background-color: #82ae46;
+}
+.suggested .container .row img{
+  border-radius: .5rem;
+}
+.suggested .container .row h6{
+margin-top: 20px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.suggested .container .row h5{
+ font-size: 15px;
+  font-weight: 500;
+}

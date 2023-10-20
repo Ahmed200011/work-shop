@@ -1,0 +1,101 @@
+.login .top {
+  background-color: #30323a;
+  height: 15px;
+}
+.login .top .color {
+  background-color: #82ae46;
+  width: 25%;
+  height: 15px;
+}
+.login .nav {
+  background-color: #ffffff;
+  height: 50px;
+}
+.login .nav span {
+  font-size: medium;
+  font-weight: 500;
+}
+.login .nav span:last-child {
+  align-items: center;
+  color: #82ae46;
+  margin-left: 10px;
+}
+
+.login .container .row .login .hr p{
+    position: absolute;
+    transform: translate(0%,-50%);
+    left: 0px;;
+    z-index: 1;
+    width: 12%;
+    height: 3px;
+    background-color: #82ae46;
+}
+.login .container .row .login form input{
+   border-radius: 0;
+}
+.login .container .row .login form button{
+  background-color: #82ae46;
+  color: #ffffff;
+  font-weight: 500;
+  border-radius: 0%;
+}
+.login .container .row .login form button:last-child{
+    background-color: #40588a;
+    margin-top: 10px;
+    color: #ffffff;
+    font-weight: 500;
+    border-radius: 0%;
+}
+.login .container .create .hr p{
+    position: absolute;
+    transform: translate(0%,-50%);
+    left: 0px;;
+    z-index: 1;
+    width: 12%;
+    height: 3px;
+    background-color: #82ae46;
+}
+.login .container .row .create form input{
+   border-radius: 0;
+}
+.login .container .row .create form .text {
+ margin-top: 11%;
+}
+.login .container .row .create form button{
+  background-color: #82ae46;
+  color: #ffffff;
+  font-weight: 500;
+  border-radius: 0%;
+}
+.login .container .row .create form button:last-child{
+    background-color: #40588a;
+    margin-top: 10px;
+    color: #ffffff;
+    font-weight: 500;
+    border-radius: 0%;
+}
+
+.suggested{
+  margin-top: 90px;
+}
+.suggested .container .hr p{
+  position: absolute;
+  transform: translate(0%,-50%);
+  left: 0px;;
+  z-index: 1;
+  width: 6%;
+  height: 3px;
+  background-color: #82ae46;
+}
+.suggested .container .row img{
+  border-radius: .5rem;
+}
+.suggested .container .row h6{
+margin-top: 20px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.suggested .container .row h5{
+ font-size: 15px;
+  font-weight: 500;
+}
