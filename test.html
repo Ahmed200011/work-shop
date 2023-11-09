@@ -1,0 +1,81 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .active {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ul>
+
+    <script>
+        // Select all list items
+        const listItems = document.querySelectorAll('li');
+
+        // Loop through the selected elements and add the active class
+        listItems.forEach(item => {
+            item.addEventListener('click', function () {
+                // Remove active class from all list items
+                listItems.forEach(li => {
+                    li.classList.remove('active');
+                });
+                // Add active class to the clicked item
+                item.classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        input[type="range"] {
+            width: 100%;
+            height: 10px;
+        }
+
+        .range-container {
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <div class="range-container">
+        <span>Min Price: <span id="minPriceValue">0</span></span>
+        <span>Max Price: <span id="maxPriceValue">100</span></span>
+    </div>
+    <input type="range" id="range" min="0" max="100" step="1" value="0">
+    <input type="range" id="range2" min="0" max="100" step="1" value="100">
+
+    <script>
+        const range = document.getElementById("range");
+        const range2 = document.getElementById("range2");
+        const minPriceValue = document.getElementById("minPriceValue");
+        const maxPriceValue = document.getElementById("maxPriceValue");
+
+        range.addEventListener("input", updateRange);
+        range2.addEventListener("input", updateRange);
+
+        function updateRange() {
+            const minValue = parseInt(range.value);
+            const maxValue = parseInt(range2.value);
+            minPriceValue.textContent = minValue;
+            maxPriceValue.textContent = maxValue;
+        }
+    </script>
+</body>
+</html>
+
+
+
+
