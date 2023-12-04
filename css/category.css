@@ -247,7 +247,7 @@ input[type="range"]::-webkit-slider-thumb {
 }
 .relatrd .row .product {
   border-top-left-radius: 12px;
-  width: 32%;
+  /* width: 100%; */
   margin-bottom: 20px;
   height: 215px;
   padding: 0;
@@ -255,8 +255,9 @@ input[type="range"]::-webkit-slider-thumb {
 
 }
 .relatrd .row .product .hover {
+  width: 90%;
   display: flex ;
-  justify-content: flex-start;
+  /* justify-content: flex-start; */
 }
 .relatrd .row .product .hover:hover {
   transform: translate(-1px, -2px);  
