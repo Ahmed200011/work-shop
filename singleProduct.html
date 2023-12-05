@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+
     <link rel="stylesheet" href="imagehover.css-master/css/imagehover.css">
     <link rel="stylesheet" href="bootstrap-5.3.1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/all.min.css">
@@ -392,7 +392,92 @@
     <div class="contact mt-5">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-4 slider"></div>
+                <div class="col-12 col-md-4 slider mt-5">
+                    <!-- Container for the image gallery -->
+                    <div class="container mt">
+
+                        <!-- Full-width images with number text -->
+
+
+                        <div class="mySlides">
+                            <img class="example-1 image" src="photo/imgs/2.jpg" style="width:100%">
+                        </div>
+                        <div class="mySlides">
+                            <img class="example-2 image" src="photo/imgs/02.jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <img class="example-3 image" src="photo/imgs/03.jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <img class="example-4 image" src="photo/imgs/04.jpg" style="width:100%">
+                        </div>
+
+                        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+                        <script src="js/extm.js"></script>
+
+
+                        <script>
+                            // $('.example-1').extm();
+                            $('.mySlides .example-1').extm({
+                                position: 'overlay'
+                            });
+                            $('.example-2').extm({
+                                position: 'overlay'
+                            });
+                            $('.example-3').extm({
+                                position: 'overlay'
+                            });
+                            $('.example-4').extm({
+                                position: 'overlay'
+                            });
+                            // $('.example-3').extm({
+                            //   squareOverlay: true,
+                            // });
+                        </script>
+
+                        <!-- <div class="mySlides">
+                            <div class="numbertext">5 / 6</div>
+                              <img src="img_nature_wide.jpg" style="width:100%">
+                          </div>
+                        
+                          <div class="mySlides">
+                            <div class="numbertext">6 / 6</div>
+                              <img src="img_snow_wide.jpg" style="width:100%">
+                          </div> -->
+
+
+
+                        <!-- Next and previous buttons -->
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                        <!-- Image text -->
+
+
+                        <!-- Thumbnail images -->
+                        <div class="row justify-content-between mt-5">
+                            <div class="column">
+                                <img class="demo cursor" src="photo/imgs/01.jpg" style="width:100%"
+                                    onclick="currentSlide(1)">
+                            </div>
+                            <div class="column">
+                                <img class="demo cursor" src="photo/imgs/02.jpg" style="width:100%"
+                                    onclick="currentSlide(2)">
+                            </div>
+                            <div class="column">
+                                <img class="demo cursor" src="photo/imgs/03.jpg" style="width:100%"
+                                    onclick="currentSlide(3)">
+                            </div>
+                            <div class="column">
+                                <img class="demo cursor" src="photo/imgs/04.jpg" style="width:100%"
+                                    onclick="currentSlide(4)">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
                 <div class="col-12 col-md-6 product">
                     <div class="buttons d-flex justify-content-between">
                         <div class="lift d-flex m-0 p-0">
@@ -465,9 +550,9 @@
                                     <td>49,00 EGP</td>
                                     <td>
                                         <div class="quantity d-flex justify-content-between align-items-center">
-                                            <i id="minus" class="btn minus fa-solid fa-minus "></i>
-                                            <h5 class="number">1</h5>
-                                            <i class="btn plus fa-solid fa-plus"></i>
+                                            <i id-d="one" class="btn minus fa-solid fa-minus "></i>
+                                            <h5 id="one" class="number">0</h5>
+                                            <i id-d="one" class="btn plus fa-solid fa-plus"></i>
                                         </div>
                                     </td>
                                 </tr>
@@ -478,9 +563,9 @@
                                     <td>49,00 EGP</td>
                                     <td>
                                         <div class="quantity d-flex justify-content-between align-items-center">
-                                            <i class="btn minus fa-solid fa-minus "></i>
-                                            <h5 class="number">1</h5>
-                                            <i class="btn plus fa-solid fa-plus"></i>
+                                            <i id-d="two" class="btn minus fa-solid fa-minus "></i>
+                                            <h5 id="two" class="number">0</h5>
+                                            <i id-d="two" class="btn plus fa-solid fa-plus"></i>
                                         </div>
                                     </td>
                                 </tr>
@@ -491,9 +576,9 @@
                                     <td>49,00 EGP</td>
                                     <td>
                                         <div class="quantity d-flex justify-content-between align-items-center">
-                                            <i class="btn minus fa-solid fa-minus "></i>
-                                            <h5 class="number">1</h5>
-                                            <i class="btn plus fa-solid fa-plus"></i>
+                                            <i id-d="three" class="btn minus fa-solid fa-minus "></i>
+                                            <h5 id="three" class="number">0</h5>
+                                            <i id-d="three" class="btn plus fa-solid fa-plus"></i>
                                         </div>
                                     </td>
                                 </tr>
@@ -504,9 +589,9 @@
                                     <td>49,00 EGP</td>
                                     <td>
                                         <div class="quantity d-flex justify-content-between align-items-center">
-                                            <i class="btn minus fa-solid fa-minus "></i>
-                                            <h5 class="number">1</h5>
-                                            <i class="btn plus fa-solid fa-plus"></i>
+                                            <i id-d="fuor" class="btn minus fa-solid fa-minus "></i>
+                                            <h5 id="fuor" class="number">0</h5>
+                                            <i id-d="fuor" class="btn plus fa-solid fa-plus"></i>
                                         </div>
                                     </td>
                                 </tr>
@@ -535,9 +620,9 @@
             <div class="container">
                 <nav>
                     <ul>
-                        <li><a href="#REVIEWS" >REVIEWS(3)</a></li>
-                        <li><a href="#DETALS" >DETALS</a></li>
-                        <li><a href="#DESCRIPTION" >DESCRIPTION</a></li>
+                        <li><a href="#REVIEWS">REVIEWS(3)</a></li>
+                        <li><a href="#DETALS">DETALS</a></li>
+                        <li><a href="#DESCRIPTION">DESCRIPTION</a></li>
                     </ul>
                 </nav>
             </div>
@@ -626,7 +711,7 @@
                                     mollitia
                                     iusto asperiores aspernatur non! Modi, laboriosam harum!</p>
                             </div>
-                            
+
 
                         </div>
                         <div class="col-12 col-md-6">
@@ -635,10 +720,10 @@
                                     <input type="text" class="form-control" placeholder="your name">
                                 </div>
                                 <div class="mb-3">
-        
+
                                     <input type="email" class="form-control" placeholder="Email">
                                 </div>
-                                
+
                                 <div class="mb-3">
                                     <textarea class="form-control" placeholder="Message" cols="50" rows="4"></textarea>
                                 </div>
@@ -663,33 +748,33 @@
                     </div>
                     <table class="table">
                         <thead>
-                          <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">First</th>
-                            <th scope="col">Last</th>
-                            <th scope="col">Handle</th>
-                          </tr>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">First</th>
+                                <th scope="col">Last</th>
+                                <th scope="col">Handle</th>
+                            </tr>
                         </thead>
                         <tbody>
-                          <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">3</th>
-                            <td colspan="2">Larry the Bird</td>
-                            <td>@twitter</td>
-                          </tr>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td colspan="2">Larry the Bird</td>
+                                <td>@twitter</td>
+                            </tr>
                         </tbody>
-                      </table>
+                    </table>
                 </div>
                 <div id="DESCRIPTION" class="description">
                     <div class="hr position-relative">
@@ -698,33 +783,33 @@
                     </div>
                     <table class="table table-bordered">
                         <thead>
-                          <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">First</th>
-                            <th scope="col">Last</th>
-                            <th scope="col">Handle</th>
-                          </tr>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">First</th>
+                                <th scope="col">Last</th>
+                                <th scope="col">Handle</th>
+                            </tr>
                         </thead>
                         <tbody>
-                          <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">3</th>
-                            <td colspan="2">Larry the Bird</td>
-                            <td>@twitter</td>
-                          </tr>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td colspan="2">Larry the Bird</td>
+                                <td>@twitter</td>
+                            </tr>
                         </tbody>
-                      </table>
+                    </table>
                 </div>
             </div>
 
@@ -734,504 +819,504 @@
     <!-- target -->
     <!-- ---------- -->
 
-<div class="related mt-5">
-    <div class="container">
-        <h5 class="fw-bold">RELATED PRODUCT </h5>
-        <div class="hr position-relative">
-            <p></p>
-            <hr>
-        </div>
+    <div class="related mt-5">
+        <div class="container">
+            <h5 class="fw-bold">RELATED PRODUCT </h5>
+            <div class="hr position-relative">
+                <p></p>
+                <hr>
+            </div>
 
-        <div class="products">
-            <div class="row  ">
-                <div class="product  col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                    <div class="discount ">
-                        <h6 class="bg-black">New</h6>
-                        <h6 class="add">-20%</h6>
+            <div class="products">
+                <div class="row  ">
+                    <div class="product  col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                        <div class="discount ">
+                            <h6 class="bg-black">New</h6>
+                            <h6 class="add">-20%</h6>
+                        </div>
+
+                        <figure class="imghvr-fade w-100">
+                            <img class="w-100" src="photo/sec-imgs/product-1.jpg" alt="example-image">
+                            <figcaption>
+                                <h3 class="ih-fade-down ih-delay-sm">
+                                    <button class="btn  rounded-0 btnpos "><i class="fa-solid fa-magnifying-glass"></i>
+                                        MORE</button>
+                                </h3>
+                            </figcaption>
+                        </figure>
+                        <div class="product-name d-flex align-items-center justify-content-around mt-3">
+                            <h1 class="fs-5 fw-bold">350 EPG</h1>
+                            <h6 class="fw-bold">product name</h6>
+                        </div>
+                        <div class="btn-toolbar   mt-3 ">
+                            <button type="button" class="btn  "><i class="fa-solid fa-heart"></i></button>
+                            <button type="button" class="btn "><i class="fa-solid fa-share-nodes"></i></button>
+                            <button type="button" class="btn  tow text-white"><i class="fa-solid fa-cart-shopping"></i>
+                                ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div class="product col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                        <div class="discount ">
+                            <h6 class="bg-black">New</h6>
+                            <h6 class="add">-20%</h6>
+                        </div>
+                        <figure class="imghvr-fade w-100">
+                            <img class="w-100" src="photo/sec-imgs/product-2.jpg" alt="example-image">
+                            <figcaption>
+                                <h3 class="ih-fade-down ih-delay-sm">
+                                    <button class="btn  rounded-0 btnpos "><i class="fa-solid fa-magnifying-glass"></i>
+                                        VIEW MORE</button>
+                                </h3>
+                            </figcaption>
+
+
+
+                        </figure>
+                        <div class="product-name d-flex align-items-center justify-content-around mt-3">
+                            <h1 class="fs-5 fw-bold">350 EPG</h1>
+                            <h6 class="fw-bold">product name</h6>
+                        </div>
+
+                        <div class="btn-toolbar   mt-3 ">
+                            <button type="button" class="btn  "><i class="fa-solid fa-heart"></i></button>
+                            <button type="button" class="btn "><i class="fa-solid fa-share-nodes"></i></button>
+                            <button type="button" class="btn  tow text-white"><i class="fa-solid fa-cart-shopping"></i>
+                                ADD TO CART</button>
+                        </div>
+
+                    </div>
+                    <div class="product col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                        <div class="discount ">
+                            <h6 class="bg-black">New</h6>
+                            <h6 class="add">-20%</h6>
+                        </div>
+                        <figure class="imghvr-fade w-100">
+                            <img class="w-100" src="photo/sec-imgs/product-3.jpg" alt="example-image">
+                            <figcaption>
+                                <h3 class="ih-fade-down ih-delay-sm">
+                                    <button class="btn  rounded-0 btnpos "><i class="fa-solid fa-magnifying-glass"></i>
+                                        VIEW MORE</button>
+                                </h3>
+                            </figcaption>
+
+
+
+                        </figure>
+                        <div class="product-name d-flex align-items-center justify-content-around mt-3">
+                            <h1 class="fs-5 fw-bold">350 EPG</h1>
+                            <h6 class="fw-bold">product name</h6>
+                        </div>
+
+                        <div class="btn-toolbar   mt-3 ">
+                            <button type="button" class="btn  "><i class="fa-solid fa-heart"></i></button>
+                            <button type="button" class="btn "><i class="fa-solid fa-share-nodes"></i></button>
+                            <button type="button" class="btn  tow text-white"><i class="fa-solid fa-cart-shopping"></i>
+                                ADD TO CART</button>
+                        </div>
+
+                    </div>
+                    <div class="product col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                        <div class="discount ">
+                            <h6 class="bg-black">New</h6>
+                            <h6 class="add">-20%</h6>
+                        </div>
+                        <figure class="imghvr-fade w-100">
+                            <img class="w-100" src="photo/sec-imgs/product-4.jpg" alt="example-image">
+                            <figcaption>
+                                <h3 class="ih-fade-down ih-delay-sm">
+                                    <button class="btn  rounded-0 btnpos "><i class="fa-solid fa-magnifying-glass"></i>
+                                        VIEW MORE</button>
+                                </h3>
+                            </figcaption>
+
+
+
+                        </figure>
+                        <div class="product-name d-flex align-items-center justify-content-around mt-3">
+                            <h1 class="fs-5 fw-bold">350 EPG</h1>
+                            <h6 class="fw-bold">product name</h6>
+                        </div>
+
+                        <div class="btn-toolbar   mt-3 ">
+                            <button type="button" class="btn  "><i class="fa-solid fa-heart"></i></button>
+                            <button type="button" class="btn "><i class="fa-solid fa-share-nodes"></i></button>
+                            <button type="button" class="btn  tow text-white"><i class="fa-solid fa-cart-shopping"></i>
+                                ADD TO CART</button>
+                        </div>
+
                     </div>
 
-                    <figure class="imghvr-fade w-100">
-                        <img class="w-100" src="photo/sec-imgs/product-1.jpg" alt="example-image">
-                        <figcaption>
-                            <h3 class="ih-fade-down ih-delay-sm">
-                                <button class="btn  rounded-0 btnpos "><i class="fa-solid fa-magnifying-glass"></i>
-                                    MORE</button>
-                            </h3>
-                        </figcaption>
-                    </figure>
-                    <div class="product-name d-flex align-items-center justify-content-around mt-3">
-                        <h1 class="fs-5 fw-bold">350 EPG</h1>
-                        <h6 class="fw-bold">product name</h6>
-                    </div>
-                    <div class="btn-toolbar   mt-3 ">
-                        <button type="button" class="btn  "><i class="fa-solid fa-heart"></i></button>
-                        <button type="button" class="btn "><i class="fa-solid fa-share-nodes"></i></button>
-                        <button type="button" class="btn  tow text-white"><i class="fa-solid fa-cart-shopping"></i>
-                            ADD TO CART</button>
-                    </div>
                 </div>
-                <div class="product col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                    <div class="discount ">
-                        <h6 class="bg-black">New</h6>
-                        <h6 class="add">-20%</h6>
-                    </div>
-                    <figure class="imghvr-fade w-100">
-                        <img class="w-100" src="photo/sec-imgs/product-2.jpg" alt="example-image">
-                        <figcaption>
-                            <h3 class="ih-fade-down ih-delay-sm">
-                                <button class="btn  rounded-0 btnpos "><i class="fa-solid fa-magnifying-glass"></i>
-                                    VIEW MORE</button>
-                            </h3>
-                        </figcaption>
-
-
-
-                    </figure>
-                    <div class="product-name d-flex align-items-center justify-content-around mt-3">
-                        <h1 class="fs-5 fw-bold">350 EPG</h1>
-                        <h6 class="fw-bold">product name</h6>
-                    </div>
-
-                    <div class="btn-toolbar   mt-3 ">
-                        <button type="button" class="btn  "><i class="fa-solid fa-heart"></i></button>
-                        <button type="button" class="btn "><i class="fa-solid fa-share-nodes"></i></button>
-                        <button type="button" class="btn  tow text-white"><i class="fa-solid fa-cart-shopping"></i>
-                            ADD TO CART</button>
-                    </div>
-
-                </div>
-                <div class="product col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                    <div class="discount ">
-                        <h6 class="bg-black">New</h6>
-                        <h6 class="add">-20%</h6>
-                    </div>
-                    <figure class="imghvr-fade w-100">
-                        <img class="w-100" src="photo/sec-imgs/product-3.jpg" alt="example-image">
-                        <figcaption>
-                            <h3 class="ih-fade-down ih-delay-sm">
-                                <button class="btn  rounded-0 btnpos "><i class="fa-solid fa-magnifying-glass"></i>
-                                    VIEW MORE</button>
-                            </h3>
-                        </figcaption>
-
-
-
-                    </figure>
-                    <div class="product-name d-flex align-items-center justify-content-around mt-3">
-                        <h1 class="fs-5 fw-bold">350 EPG</h1>
-                        <h6 class="fw-bold">product name</h6>
-                    </div>
-
-                    <div class="btn-toolbar   mt-3 ">
-                        <button type="button" class="btn  "><i class="fa-solid fa-heart"></i></button>
-                        <button type="button" class="btn "><i class="fa-solid fa-share-nodes"></i></button>
-                        <button type="button" class="btn  tow text-white"><i class="fa-solid fa-cart-shopping"></i>
-                            ADD TO CART</button>
-                    </div>
-
-                </div>
-                <div class="product col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                    <div class="discount ">
-                        <h6 class="bg-black">New</h6>
-                        <h6 class="add">-20%</h6>
-                    </div>
-                    <figure class="imghvr-fade w-100">
-                        <img class="w-100" src="photo/sec-imgs/product-4.jpg" alt="example-image">
-                        <figcaption>
-                            <h3 class="ih-fade-down ih-delay-sm">
-                                <button class="btn  rounded-0 btnpos "><i class="fa-solid fa-magnifying-glass"></i>
-                                    VIEW MORE</button>
-                            </h3>
-                        </figcaption>
-
-
-
-                    </figure>
-                    <div class="product-name d-flex align-items-center justify-content-around mt-3">
-                        <h1 class="fs-5 fw-bold">350 EPG</h1>
-                        <h6 class="fw-bold">product name</h6>
-                    </div>
-
-                    <div class="btn-toolbar   mt-3 ">
-                        <button type="button" class="btn  "><i class="fa-solid fa-heart"></i></button>
-                        <button type="button" class="btn "><i class="fa-solid fa-share-nodes"></i></button>
-                        <button type="button" class="btn  tow text-white"><i class="fa-solid fa-cart-shopping"></i>
-                            ADD TO CART</button>
-                    </div>
-
-                </div>
-               
             </div>
         </div>
     </div>
-</div>
-<div class="like mt-5">
-    <div class="container">
-        <h5 class="fw-bold">YOU MAY ALSO LIKE </h5>
-        <div class="hr position-relative">
-            <p></p>
-            <hr>
-        </div>
+    <div class="like mt-5">
+        <div class="container">
+            <h5 class="fw-bold">YOU MAY ALSO LIKE </h5>
+            <div class="hr position-relative">
+                <p></p>
+                <hr>
+            </div>
 
-        <div class="products">
-            <div class="row  ">
-                <div class="product  col-12 col-sm-12 col-md-4  col-xl-2">
-                    <div class="discount ">
-                        <h6 class="bg-black">New</h6>
-                        
-                    </div>
+            <div class="products">
+                <div class="row  ">
+                    <div class="product  col-12 col-sm-12 col-md-4  col-xl-2">
+                        <div class="discount ">
+                            <h6 class="bg-black">New</h6>
 
-                    <figure class="imghvr-fade w-100">
-                        <img class="w-100" src="photo/sec-imgs/product-1.jpg" alt="example-image">
-                        <figcaption>
-                            <h3 class="ih-fade-down ih-delay-sm">
-                                <button class="btn  rounded-0 btnpos "><i class="fa-solid fa-magnifying-glass"></i>
-                                    MORE</button>
-                            </h3>
-                        </figcaption>
-                    </figure>
-                    <div class="product-name  mt-3">
-                        <h1 class=" fw-bold">350 EPG</h1>
-                        <h6 class="fw-bold">product name</h6>
-                    </div>
-                    <div class="btn-toolbar   mt-3 ">
-                        <button type="button" class="btn  "><i class="fa-solid fa-heart"></i></button>
-                        <button type="button" class="btn "><i class="fa-solid fa-share-nodes"></i></button>
-                        <button type="button" class="btn  tow text-white"><i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+
+                        <figure class="imghvr-fade w-100">
+                            <img class="w-100" src="photo/sec-imgs/product-1.jpg" alt="example-image">
+                            <figcaption>
+                                <h3 class="ih-fade-down ih-delay-sm">
+                                    <button class="btn  rounded-0 btnpos "><i class="fa-solid fa-magnifying-glass"></i>
+                                        MORE</button>
+                                </h3>
+                            </figcaption>
+                        </figure>
+                        <div class="product-name  mt-3">
+                            <h1 class=" fw-bold">350 EPG</h1>
+                            <h6 class="fw-bold">product name</h6>
+                        </div>
+                        <div class="btn-toolbar   mt-3 ">
+                            <button type="button" class="btn  "><i class="fa-solid fa-heart"></i></button>
+                            <button type="button" class="btn "><i class="fa-solid fa-share-nodes"></i></button>
+                            <button type="button" class="btn  tow text-white"><i class="fa-solid fa-cart-shopping"></i>
                             </button>
+                        </div>
                     </div>
-                </div>
-                <div class="product col-12 col-sm-12 col-md-4  col-xl-2">
-                    <div class="discount ">
-                        <h6 class="bg-black">New</h6>
-                        <h6 class="add">-20%</h6>
-                    </div>
-                    <figure class="imghvr-fade w-100">
-                        <img class="w-100" src="photo/sec-imgs/product-2.jpg" alt="example-image">
-                        <figcaption>
-                            <h3 class="ih-fade-down ih-delay-sm">
-                                <button class="btn  rounded-0 btnpos "><i class="fa-solid fa-magnifying-glass"></i>
-                                    MORE</button>
-                            </h3>
-                        </figcaption>
+                    <div class="product col-12 col-sm-12 col-md-4  col-xl-2">
+                        <div class="discount ">
+                            <h6 class="bg-black">New</h6>
+                            <h6 class="add">-20%</h6>
+                        </div>
+                        <figure class="imghvr-fade w-100">
+                            <img class="w-100" src="photo/sec-imgs/product-2.jpg" alt="example-image">
+                            <figcaption>
+                                <h3 class="ih-fade-down ih-delay-sm">
+                                    <button class="btn  rounded-0 btnpos "><i class="fa-solid fa-magnifying-glass"></i>
+                                        MORE</button>
+                                </h3>
+                            </figcaption>
 
 
 
-                    </figure>
-                    <div class="product-name  mt-3">
-                        <h1 class=" fw-bold">350 EPG</h1>
-                        <h6 class="fw-bold">product name</h6>
-                    </div>
+                        </figure>
+                        <div class="product-name  mt-3">
+                            <h1 class=" fw-bold">350 EPG</h1>
+                            <h6 class="fw-bold">product name</h6>
+                        </div>
 
-                    <div class="btn-toolbar   mt-3 ">
-                        <button type="button" class="btn  "><i class="fa-solid fa-heart"></i></button>
-                        <button type="button" class="btn "><i class="fa-solid fa-share-nodes"></i></button>
-                        <button type="button" class="btn  tow text-white"><i class="fa-solid fa-cart-shopping"></i>
+                        <div class="btn-toolbar   mt-3 ">
+                            <button type="button" class="btn  "><i class="fa-solid fa-heart"></i></button>
+                            <button type="button" class="btn "><i class="fa-solid fa-share-nodes"></i></button>
+                            <button type="button" class="btn  tow text-white"><i class="fa-solid fa-cart-shopping"></i>
                             </button>
+                        </div>
+
                     </div>
-
-                </div>
-                <div class="product col-12 col-sm-12 col-md-4  col-xl-2">
-                    <div class="discount ">
-                        <h6 class="bg-black">New</h6>
-                        <h6 class="add">-20%</h6>
-                    </div>
-                    <figure class="imghvr-fade w-100">
-                        <img class="w-100" src="photo/sec-imgs/product-3.jpg" alt="example-image">
-                        <figcaption>
-                            <h3 class="ih-fade-down ih-delay-sm">
-                                <button class="btn  rounded-0 btnpos "><i class="fa-solid fa-magnifying-glass"></i>
-                                    MORE</button>
-                            </h3>
-                        </figcaption>
+                    <div class="product col-12 col-sm-12 col-md-4  col-xl-2">
+                        <div class="discount ">
+                            <h6 class="bg-black">New</h6>
+                            <h6 class="add">-20%</h6>
+                        </div>
+                        <figure class="imghvr-fade w-100">
+                            <img class="w-100" src="photo/sec-imgs/product-3.jpg" alt="example-image">
+                            <figcaption>
+                                <h3 class="ih-fade-down ih-delay-sm">
+                                    <button class="btn  rounded-0 btnpos "><i class="fa-solid fa-magnifying-glass"></i>
+                                        MORE</button>
+                                </h3>
+                            </figcaption>
 
 
 
-                    </figure>
-                    <div class="product-name  mt-3">
-                        <h1 class=" fw-bold">350 EPG</h1>
-                        <h6 class="fw-bold">product name</h6>
-                    </div>
+                        </figure>
+                        <div class="product-name  mt-3">
+                            <h1 class=" fw-bold">350 EPG</h1>
+                            <h6 class="fw-bold">product name</h6>
+                        </div>
 
-                    <div class="btn-toolbar   mt-3 ">
-                        <button type="button" class="btn  "><i class="fa-solid fa-heart"></i></button>
-                        <button type="button" class="btn "><i class="fa-solid fa-share-nodes"></i></button>
-                        <button type="button" class="btn  tow text-white"><i class="fa-solid fa-cart-shopping"></i>
+                        <div class="btn-toolbar   mt-3 ">
+                            <button type="button" class="btn  "><i class="fa-solid fa-heart"></i></button>
+                            <button type="button" class="btn "><i class="fa-solid fa-share-nodes"></i></button>
+                            <button type="button" class="btn  tow text-white"><i class="fa-solid fa-cart-shopping"></i>
                             </button>
+                        </div>
+
                     </div>
-
-                </div>
-                <div class="product col-12 col-sm-12 col-md-4  col-xl-2">
-                    <div class="discount ">
-                        <h6 class="bg-black">New</h6>
-                        <h6 class="add">-20%</h6>
-                    </div>
-                    <figure class="imghvr-fade w-100">
-                        <img class="w-100" src="photo/sec-imgs/product-4.jpg" alt="example-image">
-                        <figcaption>
-                            <h3 class="ih-fade-down ih-delay-sm">
-                                <button class="btn  rounded-0 btnpos "><i class="fa-solid fa-magnifying-glass"></i>
-                                    MORE</button>
-                            </h3>
-                        </figcaption>
+                    <div class="product col-12 col-sm-12 col-md-4  col-xl-2">
+                        <div class="discount ">
+                            <h6 class="bg-black">New</h6>
+                            <h6 class="add">-20%</h6>
+                        </div>
+                        <figure class="imghvr-fade w-100">
+                            <img class="w-100" src="photo/sec-imgs/product-4.jpg" alt="example-image">
+                            <figcaption>
+                                <h3 class="ih-fade-down ih-delay-sm">
+                                    <button class="btn  rounded-0 btnpos "><i class="fa-solid fa-magnifying-glass"></i>
+                                        MORE</button>
+                                </h3>
+                            </figcaption>
 
 
 
-                    </figure>
-                    <div class="product-name  mt-3">
-                        <h1 class=" fw-bold">350 EPG</h1>
-                        <h6 class="fw-bold">product name</h6>
-                    </div>
+                        </figure>
+                        <div class="product-name  mt-3">
+                            <h1 class=" fw-bold">350 EPG</h1>
+                            <h6 class="fw-bold">product name</h6>
+                        </div>
 
-                    <div class="btn-toolbar   mt-3 ">
-                        <button type="button" class="btn  "><i class="fa-solid fa-heart"></i></button>
-                        <button type="button" class="btn "><i class="fa-solid fa-share-nodes"></i></button>
-                        <button type="button" class="btn  tow text-white"><i class="fa-solid fa-cart-shopping"></i>
+                        <div class="btn-toolbar   mt-3 ">
+                            <button type="button" class="btn  "><i class="fa-solid fa-heart"></i></button>
+                            <button type="button" class="btn "><i class="fa-solid fa-share-nodes"></i></button>
+                            <button type="button" class="btn  tow text-white"><i class="fa-solid fa-cart-shopping"></i>
                             </button>
+                        </div>
+
                     </div>
-
-                </div>
-                <div class="product col-12 col-sm-12 col-md-4  col-xl-2">
-                    <div class="discount ">
-                        <h6 class="bg-black">New</h6>
-                        <h6 class="add">-20%</h6>
-                    </div>
-                    <figure class="imghvr-fade w-100">
-                        <img class="w-100" src="photo/sec-imgs/product-3.jpg" alt="example-image">
-                        <figcaption>
-                            <h3 class="ih-fade-down ih-delay-sm">
-                                <button class="btn  rounded-0 btnpos "><i class="fa-solid fa-magnifying-glass"></i>
-                                    MORE</button>
-                            </h3>
-                        </figcaption>
+                    <div class="product col-12 col-sm-12 col-md-4  col-xl-2">
+                        <div class="discount ">
+                            <h6 class="bg-black">New</h6>
+                            <h6 class="add">-20%</h6>
+                        </div>
+                        <figure class="imghvr-fade w-100">
+                            <img class="w-100" src="photo/sec-imgs/product-3.jpg" alt="example-image">
+                            <figcaption>
+                                <h3 class="ih-fade-down ih-delay-sm">
+                                    <button class="btn  rounded-0 btnpos "><i class="fa-solid fa-magnifying-glass"></i>
+                                        MORE</button>
+                                </h3>
+                            </figcaption>
 
 
 
-                    </figure>
-                    <div class="product-name  mt-3">
-                        <h1 class=" fw-bold">350 EPG</h1>
-                        <h6 class="fw-bold">product name</h6>
-                    </div>
+                        </figure>
+                        <div class="product-name  mt-3">
+                            <h1 class=" fw-bold">350 EPG</h1>
+                            <h6 class="fw-bold">product name</h6>
+                        </div>
 
-                    <div class="btn-toolbar   mt-3 ">
-                        <button type="button" class="btn  "><i class="fa-solid fa-heart"></i></button>
-                        <button type="button" class="btn "><i class="fa-solid fa-share-nodes"></i></button>
-                        <button type="button" class="btn  tow text-white"><i class="fa-solid fa-cart-shopping"></i>
+                        <div class="btn-toolbar   mt-3 ">
+                            <button type="button" class="btn  "><i class="fa-solid fa-heart"></i></button>
+                            <button type="button" class="btn "><i class="fa-solid fa-share-nodes"></i></button>
+                            <button type="button" class="btn  tow text-white"><i class="fa-solid fa-cart-shopping"></i>
                             </button>
+                        </div>
+
                     </div>
-
-                </div>
-                <div class="product col-12 col-sm-12 col-md-4  col-xl-2">
-                    <div class="discount ">
-                        <h6 class="bg-black">New</h6>
-                        <h6 class="add">-20%</h6>
-                    </div>
-                    <figure class="imghvr-fade w-100">
-                        <img class="w-100" src="photo/sec-imgs/product-4.jpg" alt="example-image">
-                        <figcaption>
-                            <h3 class="ih-fade-down ih-delay-sm">
-                                <button class="btn  rounded-0 btnpos "><i class="fa-solid fa-magnifying-glass"></i>
-                                    MORE</button>
-                            </h3>
-                        </figcaption>
+                    <div class="product col-12 col-sm-12 col-md-4  col-xl-2">
+                        <div class="discount ">
+                            <h6 class="bg-black">New</h6>
+                            <h6 class="add">-20%</h6>
+                        </div>
+                        <figure class="imghvr-fade w-100">
+                            <img class="w-100" src="photo/sec-imgs/product-4.jpg" alt="example-image">
+                            <figcaption>
+                                <h3 class="ih-fade-down ih-delay-sm">
+                                    <button class="btn  rounded-0 btnpos "><i class="fa-solid fa-magnifying-glass"></i>
+                                        MORE</button>
+                                </h3>
+                            </figcaption>
 
 
 
-                    </figure>
-                    <div class="product-name mt-3">
-                        <h1 class=" fw-bold">350 EPG</h1>
-                        <h6 class="fw-bold">product name</h6>
-                    </div>
+                        </figure>
+                        <div class="product-name mt-3">
+                            <h1 class=" fw-bold">350 EPG</h1>
+                            <h6 class="fw-bold">product name</h6>
+                        </div>
 
-                    <div class="btn-toolbar   mt-3 ">
-                        <button type="button" class="btn  "><i class="fa-solid fa-heart"></i></button>
-                        <button type="button" class="btn "><i class="fa-solid fa-share-nodes"></i></button>
-                        <button type="button" class="btn  tow text-white"><i class="fa-solid fa-cart-shopping"></i>
+                        <div class="btn-toolbar   mt-3 ">
+                            <button type="button" class="btn  "><i class="fa-solid fa-heart"></i></button>
+                            <button type="button" class="btn "><i class="fa-solid fa-share-nodes"></i></button>
+                            <button type="button" class="btn  tow text-white"><i class="fa-solid fa-cart-shopping"></i>
                             </button>
-                    </div>
+                        </div>
 
-                </div>
-                <div class="product  col-12 col-sm-12 col-md-4  col-xl-2">
-                    <div class="discount ">
-                        <h6 class="bg-black">New</h6>
-                        
                     </div>
+                    <div class="product  col-12 col-sm-12 col-md-4  col-xl-2">
+                        <div class="discount ">
+                            <h6 class="bg-black">New</h6>
 
-                    <figure class="imghvr-fade w-100">
-                        <img class="w-100" src="photo/sec-imgs/product-1.jpg" alt="example-image">
-                        <figcaption>
-                            <h3 class="ih-fade-down ih-delay-sm">
-                                <button class="btn  rounded-0 btnpos "><i class="fa-solid fa-magnifying-glass"></i>
-                                    MORE</button>
-                            </h3>
-                        </figcaption>
-                    </figure>
-                    <div class="product-name  mt-3">
-                        <h1 class=" fw-bold">350 EPG</h1>
-                        <h6 class="fw-bold">product name</h6>
-                    </div>
-                    <div class="btn-toolbar   mt-3 ">
-                        <button type="button" class="btn  "><i class="fa-solid fa-heart"></i></button>
-                        <button type="button" class="btn "><i class="fa-solid fa-share-nodes"></i></button>
-                        <button type="button" class="btn  tow text-white"><i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+
+                        <figure class="imghvr-fade w-100">
+                            <img class="w-100" src="photo/sec-imgs/product-1.jpg" alt="example-image">
+                            <figcaption>
+                                <h3 class="ih-fade-down ih-delay-sm">
+                                    <button class="btn  rounded-0 btnpos "><i class="fa-solid fa-magnifying-glass"></i>
+                                        MORE</button>
+                                </h3>
+                            </figcaption>
+                        </figure>
+                        <div class="product-name  mt-3">
+                            <h1 class=" fw-bold">350 EPG</h1>
+                            <h6 class="fw-bold">product name</h6>
+                        </div>
+                        <div class="btn-toolbar   mt-3 ">
+                            <button type="button" class="btn  "><i class="fa-solid fa-heart"></i></button>
+                            <button type="button" class="btn "><i class="fa-solid fa-share-nodes"></i></button>
+                            <button type="button" class="btn  tow text-white"><i class="fa-solid fa-cart-shopping"></i>
                             </button>
+                        </div>
                     </div>
-                </div>
-                <div class="product col-12 col-sm-12 col-md-4  col-xl-2">
-                    <div class="discount ">
-                        <h6 class="bg-black">New</h6>
-                        <h6 class="add">-20%</h6>
-                    </div>
-                    <figure class="imghvr-fade w-100">
-                        <img class="w-100" src="photo/sec-imgs/product-2.jpg" alt="example-image">
-                        <figcaption>
-                            <h3 class="ih-fade-down ih-delay-sm">
-                                <button class="btn  rounded-0 btnpos "><i class="fa-solid fa-magnifying-glass"></i>
-                                    MORE</button>
-                            </h3>
-                        </figcaption>
+                    <div class="product col-12 col-sm-12 col-md-4  col-xl-2">
+                        <div class="discount ">
+                            <h6 class="bg-black">New</h6>
+                            <h6 class="add">-20%</h6>
+                        </div>
+                        <figure class="imghvr-fade w-100">
+                            <img class="w-100" src="photo/sec-imgs/product-2.jpg" alt="example-image">
+                            <figcaption>
+                                <h3 class="ih-fade-down ih-delay-sm">
+                                    <button class="btn  rounded-0 btnpos "><i class="fa-solid fa-magnifying-glass"></i>
+                                        MORE</button>
+                                </h3>
+                            </figcaption>
 
 
 
-                    </figure>
-                    <div class="product-name  mt-3">
-                        <h1 class=" fw-bold">350 EPG</h1>
-                        <h6 class="fw-bold">product name</h6>
-                    </div>
+                        </figure>
+                        <div class="product-name  mt-3">
+                            <h1 class=" fw-bold">350 EPG</h1>
+                            <h6 class="fw-bold">product name</h6>
+                        </div>
 
-                    <div class="btn-toolbar   mt-3 ">
-                        <button type="button" class="btn  "><i class="fa-solid fa-heart"></i></button>
-                        <button type="button" class="btn "><i class="fa-solid fa-share-nodes"></i></button>
-                        <button type="button" class="btn  tow text-white"><i class="fa-solid fa-cart-shopping"></i>
+                        <div class="btn-toolbar   mt-3 ">
+                            <button type="button" class="btn  "><i class="fa-solid fa-heart"></i></button>
+                            <button type="button" class="btn "><i class="fa-solid fa-share-nodes"></i></button>
+                            <button type="button" class="btn  tow text-white"><i class="fa-solid fa-cart-shopping"></i>
                             </button>
+                        </div>
+
                     </div>
-
-                </div>
-                <div class="product col-12 col-sm-12 col-md-4  col-xl-2">
-                    <div class="discount ">
-                        <h6 class="bg-black">New</h6>
-                        <h6 class="add">-20%</h6>
-                    </div>
-                    <figure class="imghvr-fade w-100">
-                        <img class="w-100" src="photo/sec-imgs/product-3.jpg" alt="example-image">
-                        <figcaption>
-                            <h3 class="ih-fade-down ih-delay-sm">
-                                <button class="btn  rounded-0 btnpos "><i class="fa-solid fa-magnifying-glass"></i>
-                                    MORE</button>
-                            </h3>
-                        </figcaption>
+                    <div class="product col-12 col-sm-12 col-md-4  col-xl-2">
+                        <div class="discount ">
+                            <h6 class="bg-black">New</h6>
+                            <h6 class="add">-20%</h6>
+                        </div>
+                        <figure class="imghvr-fade w-100">
+                            <img class="w-100" src="photo/sec-imgs/product-3.jpg" alt="example-image">
+                            <figcaption>
+                                <h3 class="ih-fade-down ih-delay-sm">
+                                    <button class="btn  rounded-0 btnpos "><i class="fa-solid fa-magnifying-glass"></i>
+                                        MORE</button>
+                                </h3>
+                            </figcaption>
 
 
 
-                    </figure>
-                    <div class="product-name  mt-3">
-                        <h1 class=" fw-bold">350 EPG</h1>
-                        <h6 class="fw-bold">product name</h6>
-                    </div>
+                        </figure>
+                        <div class="product-name  mt-3">
+                            <h1 class=" fw-bold">350 EPG</h1>
+                            <h6 class="fw-bold">product name</h6>
+                        </div>
 
-                    <div class="btn-toolbar   mt-3 ">
-                        <button type="button" class="btn  "><i class="fa-solid fa-heart"></i></button>
-                        <button type="button" class="btn "><i class="fa-solid fa-share-nodes"></i></button>
-                        <button type="button" class="btn  tow text-white"><i class="fa-solid fa-cart-shopping"></i>
+                        <div class="btn-toolbar   mt-3 ">
+                            <button type="button" class="btn  "><i class="fa-solid fa-heart"></i></button>
+                            <button type="button" class="btn "><i class="fa-solid fa-share-nodes"></i></button>
+                            <button type="button" class="btn  tow text-white"><i class="fa-solid fa-cart-shopping"></i>
                             </button>
+                        </div>
+
                     </div>
-
-                </div>
-                <div class="product col-12 col-sm-12 col-md-4  col-xl-2">
-                    <div class="discount ">
-                        <h6 class="bg-black">New</h6>
-                        <h6 class="add">-20%</h6>
-                    </div>
-                    <figure class="imghvr-fade w-100">
-                        <img class="w-100" src="photo/sec-imgs/product-4.jpg" alt="example-image">
-                        <figcaption>
-                            <h3 class="ih-fade-down ih-delay-sm">
-                                <button class="btn  rounded-0 btnpos "><i class="fa-solid fa-magnifying-glass"></i>
-                                    MORE</button>
-                            </h3>
-                        </figcaption>
+                    <div class="product col-12 col-sm-12 col-md-4  col-xl-2">
+                        <div class="discount ">
+                            <h6 class="bg-black">New</h6>
+                            <h6 class="add">-20%</h6>
+                        </div>
+                        <figure class="imghvr-fade w-100">
+                            <img class="w-100" src="photo/sec-imgs/product-4.jpg" alt="example-image">
+                            <figcaption>
+                                <h3 class="ih-fade-down ih-delay-sm">
+                                    <button class="btn  rounded-0 btnpos "><i class="fa-solid fa-magnifying-glass"></i>
+                                        MORE</button>
+                                </h3>
+                            </figcaption>
 
 
 
-                    </figure>
-                    <div class="product-name  mt-3">
-                        <h1 class=" fw-bold">350 EPG</h1>
-                        <h6 class="fw-bold">product name</h6>
-                    </div>
+                        </figure>
+                        <div class="product-name  mt-3">
+                            <h1 class=" fw-bold">350 EPG</h1>
+                            <h6 class="fw-bold">product name</h6>
+                        </div>
 
-                    <div class="btn-toolbar   mt-3 ">
-                        <button type="button" class="btn  "><i class="fa-solid fa-heart"></i></button>
-                        <button type="button" class="btn "><i class="fa-solid fa-share-nodes"></i></button>
-                        <button type="button" class="btn  tow text-white"><i class="fa-solid fa-cart-shopping"></i>
+                        <div class="btn-toolbar   mt-3 ">
+                            <button type="button" class="btn  "><i class="fa-solid fa-heart"></i></button>
+                            <button type="button" class="btn "><i class="fa-solid fa-share-nodes"></i></button>
+                            <button type="button" class="btn  tow text-white"><i class="fa-solid fa-cart-shopping"></i>
                             </button>
+                        </div>
+
                     </div>
-
-                </div>
-                <div class="product col-12 col-sm-12 col-md-4  col-xl-2">
-                    <div class="discount ">
-                        <h6 class="bg-black">New</h6>
-                        <h6 class="add">-20%</h6>
-                    </div>
-                    <figure class="imghvr-fade w-100">
-                        <img class="w-100" src="photo/sec-imgs/product-3.jpg" alt="example-image">
-                        <figcaption>
-                            <h3 class="ih-fade-down ih-delay-sm">
-                                <button class="btn  rounded-0 btnpos "><i class="fa-solid fa-magnifying-glass"></i>
-                                    MORE</button>
-                            </h3>
-                        </figcaption>
+                    <div class="product col-12 col-sm-12 col-md-4  col-xl-2">
+                        <div class="discount ">
+                            <h6 class="bg-black">New</h6>
+                            <h6 class="add">-20%</h6>
+                        </div>
+                        <figure class="imghvr-fade w-100">
+                            <img class="w-100" src="photo/sec-imgs/product-3.jpg" alt="example-image">
+                            <figcaption>
+                                <h3 class="ih-fade-down ih-delay-sm">
+                                    <button class="btn  rounded-0 btnpos "><i class="fa-solid fa-magnifying-glass"></i>
+                                        MORE</button>
+                                </h3>
+                            </figcaption>
 
 
 
-                    </figure>
-                    <div class="product-name  mt-3">
-                        <h1 class=" fw-bold">350 EPG</h1>
-                        <h6 class="fw-bold">product name</h6>
-                    </div>
+                        </figure>
+                        <div class="product-name  mt-3">
+                            <h1 class=" fw-bold">350 EPG</h1>
+                            <h6 class="fw-bold">product name</h6>
+                        </div>
 
-                    <div class="btn-toolbar   mt-3 ">
-                        <button type="button" class="btn  "><i class="fa-solid fa-heart"></i></button>
-                        <button type="button" class="btn "><i class="fa-solid fa-share-nodes"></i></button>
-                        <button type="button" class="btn  tow text-white"><i class="fa-solid fa-cart-shopping"></i>
+                        <div class="btn-toolbar   mt-3 ">
+                            <button type="button" class="btn  "><i class="fa-solid fa-heart"></i></button>
+                            <button type="button" class="btn "><i class="fa-solid fa-share-nodes"></i></button>
+                            <button type="button" class="btn  tow text-white"><i class="fa-solid fa-cart-shopping"></i>
                             </button>
+                        </div>
+
                     </div>
-
-                </div>
-                <div class="product col-12 col-sm-12 col-md-4  col-xl-2">
-                    <div class="discount ">
-                        <h6 class="bg-black">New</h6>
-                        <h6 class="add">-20%</h6>
-                    </div>
-                    <figure class="imghvr-fade w-100">
-                        <img class="w-100" src="photo/sec-imgs/product-4.jpg" alt="example-image">
-                        <figcaption>
-                            <h3 class="ih-fade-down ih-delay-sm">
-                                <button class="btn  rounded-0 btnpos "><i class="fa-solid fa-magnifying-glass"></i>
-                                    MORE</button>
-                            </h3>
-                        </figcaption>
+                    <div class="product col-12 col-sm-12 col-md-4  col-xl-2">
+                        <div class="discount ">
+                            <h6 class="bg-black">New</h6>
+                            <h6 class="add">-20%</h6>
+                        </div>
+                        <figure class="imghvr-fade w-100">
+                            <img class="w-100" src="photo/sec-imgs/product-4.jpg" alt="example-image">
+                            <figcaption>
+                                <h3 class="ih-fade-down ih-delay-sm">
+                                    <button class="btn  rounded-0 btnpos "><i class="fa-solid fa-magnifying-glass"></i>
+                                        MORE</button>
+                                </h3>
+                            </figcaption>
 
 
 
-                    </figure>
-                    <div class="product-name mt-3">
-                        <h1 class=" fw-bold">350 EPG</h1>
-                        <h6 class="fw-bold">product name</h6>
-                    </div>
+                        </figure>
+                        <div class="product-name mt-3">
+                            <h1 class=" fw-bold">350 EPG</h1>
+                            <h6 class="fw-bold">product name</h6>
+                        </div>
 
-                    <div class="btn-toolbar   mt-3 ">
-                        <button type="button" class="btn  "><i class="fa-solid fa-heart"></i></button>
-                        <button type="button" class="btn "><i class="fa-solid fa-share-nodes"></i></button>
-                        <button type="button" class="btn  tow text-white"><i class="fa-solid fa-cart-shopping"></i>
+                        <div class="btn-toolbar   mt-3 ">
+                            <button type="button" class="btn  "><i class="fa-solid fa-heart"></i></button>
+                            <button type="button" class="btn "><i class="fa-solid fa-share-nodes"></i></button>
+                            <button type="button" class="btn  tow text-white"><i class="fa-solid fa-cart-shopping"></i>
                             </button>
+                        </div>
+
                     </div>
 
                 </div>
-               
             </div>
         </div>
     </div>
-</div>
 
 
     <!-------------->
@@ -1298,6 +1383,7 @@
     <script src="bootstrap-5.3.1-dist/js/bootstrap.bundle.js"></script>
     <script src="js/code.jquery.com_jquery-3.7.1.min.js"></script>
     <script src="js/singleProduct.js"></script>
+    <script src="js/extm.js"></script>
 
 </body>
 
