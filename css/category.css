@@ -34,6 +34,14 @@
 .cat .lefit .woman h1 {
   margin-bottom: 35px;
 }
+@media screen and (max-width: 767px) {
+  .cat .lefit  {
+    display: none;
+  }
+  .cat .right .head .l  {
+    display: none !important;
+  }
+}
 .cat .lefit .woman .tayps a {
   text-decoration: none;
   color: black;
@@ -245,16 +253,14 @@ input[type="range"]::-webkit-slider-thumb {
 .relatrd .relatrd{
   width: 3%;
 }
-.relatrd .row .product {
+
+.relatrd .row .product .hover {
   border-top-left-radius: 12px;
   /* width: 100%; */
   margin-bottom: 20px;
   height: 215px;
   padding: 0;
   box-shadow:  2px 3px 4px 0px #82ae46;
-
-}
-.relatrd .row .product .hover {
   width: 90%;
   display: flex ;
   /* justify-content: flex-start; */

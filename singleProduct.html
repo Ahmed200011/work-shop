@@ -380,10 +380,10 @@
     </div>
     <div class="nav shadow-sm ">
         <div class="container d-flex align-items-center">
-            <span>Home </span>
-            <span>/ Product </span>
-            <span>/ Category </span>
-            <span>/ Product Name </span>
+            <span class="p-0">Home </span>
+            <span class="p-0">/ Product </span>
+            <span class="p-0">/ Category </span>
+            <span class="p-0">/ Product Name </span>
         </div>
     </div>
 
@@ -392,7 +392,7 @@
     <div class="contact mt-5">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-4 slider mt-5">
+                <div class="col-12 col-md-4  mb-5 mt-5">
                     <!-- Container for the image gallery -->
                     <div class="container mt">
 
@@ -478,7 +478,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 product">
+                <div class="col-12 col-md-6 mb-5 product">
                     <div class="buttons d-flex justify-content-between">
                         <div class="lift d-flex m-0 p-0">
                             <div class="">NEW</div>
@@ -527,14 +527,14 @@
                         </div>
                         <div class=" Size mt-3 d-flex">
                             <span class="fw-bold ">Size:</span>
-                            <span>
+                            <span class="w-75">
                                 <div class="d-flex justify-content-evenly ">
-                                    <div class="border border-success text-success ">XS</div>
-                                    <div class="border border-success text-success ">SM</div>
-                                    <div class="border border-black ">SL</div>
-                                    <div class="border border-black ">XL</div>
-                                    <div class="border border-black ">2X</div>
-                                    <div class="border border-black ">3X</div>
+                                    <div class="btn text-center p-0 border rounded-0 border-success text-success ">XS</div>
+                                    <div class="btn text-center p-0 border rounded-0 border-success text-success ">SM</div>
+                                    <div class="btn text-center p-0 border rounded-0 border-black ">SL</div>
+                                    <div class="btn text-center p-0 border rounded-0 border-black ">XL</div>
+                                    <div class="btn text-center p-0 border rounded-0 border-black ">2X</div>
+                                    <div class="btn text-center p-0 border rounded-0 border-black ">3X</div>
                                 </div>
                             </span>
                         </div>
@@ -600,7 +600,17 @@
                         </table>
                     </div>
                 </div>
-                <div class="col-12 col-md-2 catdTotal"></div>
+                <div class="col-12 col-md-12 mb-5 col-xl-2 cartTotal">
+                    <div class="cart p-2">
+                        <h1 class="mb-4"><i class="fa-solid fa-cart-shopping"></i> CART TOTAL</h1>
+                        <h5 class="mb-4"><span>Subtotal:</span><span>200.00 EGP</span></h5>
+                        <h5 class="mb-4"><span>Shoping:</span><span>50.00 EGP</span></h5>
+                        <h5 class="mb-4"><span class="fw-bolder">TOTALS:</span><span>250.00 EGP</span></h5>
+                        <button class="btn  fw-bolder"> CHECKOUT <i class="fa-solid fa-circle-arrow-right"></i></button>
+
+
+                    </div>
+                </div>
 
             </div>
         </div>
