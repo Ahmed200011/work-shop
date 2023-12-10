@@ -1,7 +1,7 @@
 
 var coverflow = $("#coverflow").flipster();
 
-var countDownDate = new Date("oct 27, 2023").getTime();
+var countDownDate = new Date("dec 17, 2023").getTime();
 
 var x = setInterval(function () {
 
