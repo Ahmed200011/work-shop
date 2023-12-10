@@ -17,9 +17,11 @@ tbody.addEventListener("click", function (e) {
   // };
 });
 
+var text=document.querySelectorAll(".text")
 
 left.addEventListener("click", function (e) {
   if (e.target.classList.contains("text")) {
+    text.forEach((ele) => ele.classList.remove("activ"));
     e.target.classList.add("activ");
   }
 
@@ -65,3 +67,17 @@ btn8.onclick=function(){
 // function handelColor() {
 //   text.classList.add("activ");
 // }
+
+
+var product=document.querySelectorAll('.click')
+
+product.forEach(element => {
+    element.addEventListener('click',function(e) {
+        e.preventDefault()
+        // e.target.setAttribute('href','singleProduct.html')
+        window.location.href = "singleProduct.html";
+        // console.log(e.target.className);
+
+    })
+    
+});

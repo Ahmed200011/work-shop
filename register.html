@@ -11,6 +11,389 @@
 </head>
 
 <body>
+
+    <!-- header -->
+    <header>
+        <div class="top-header">
+            <div class="container">
+                <div class="row">
+                    <div class="left col-12 col-sm-12 col-md-6">
+                        <span><i class="fas fa-bullhorn"></i> WHATEVER YOU'VE GOT IN MIND...WE'VE GOT INSIDE</span>
+                    </div>
+                    <div class="right col-12 col-sm-12 col-md-6 ">
+                        <div class="contant d-flex justify-content-between">
+                            <span><a class="text-decoration-none text-white" href=""><i
+                                        class="fa-brands fa-app-store-ios"></i> APP STOR</a></span>
+                            <span><a class="text-decoration-none text-white" href=""><i
+                                        class="fa-brands fa-google-play"></i> GOOGLE PLAY</a></span>
+                            <div class="dropdown">
+                                <div class=" dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    ENG
+                                </div>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">ENGLISH(ENG)</a></li>
+                                    <li><a class="dropdown-item" href="#">RUSSIAN(UR) </a></li>
+                                    <li><a class="dropdown-item" href="#">FRENCH (FR) </a></li>
+                                    <li><a class="dropdown-item" href="#">SPANISH(ES)</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="dropdown">
+                                <div class="dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    USD
+                                </div>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">USD ($)</a></li>
+                                    <li><a class="dropdown-item" href="#">EUR (€)</a></li>
+                                </ul>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="botton-header">
+            <div class="container">
+                <div class="row">
+                    <div class="left-side col-12 col-sm-12 col-md-7 d-flex">
+                        <div class="logo ">
+                            <a href=""><img src="photo/logo/logo.png" alt=""></a>
+                        </div>
+                        <div class="search-par ">
+                            <form action="" class="search-input d-flex ">
+                                <input type="text" class="form-control" placeholder="Search ">
+                                <select class="form-select" aria-label="Defualt select example">
+                                    <option class="selected" selected>peoduct</option>
+                                    <option value="1">peoduct 1</option>
+                                    <option value="2">peoduct 2</option>
+                                    <option value="3">peoduct 3</option>
+                                </select>
+                                <button class="btn btn-light"><i class="fa-solid fa-magnifying-glass"></i></button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="right-side col-12 col-sm-12 col-md-5  ">
+                        <div class="d-flex justify-content-end">
+                            <div>
+                                <div class="dropdown me-2 ">
+                                    <div class="dropdown-toggle d-flex" type="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        <div class="icon"><i class="fa-solid fa-user"></i></div>
+                                        <div class="text d-flex flex-column">
+                                            MY ACCOUNT
+                                        </div>
+                                    </div>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="acount.html"><i
+                                                    class="fa-regular fa-user"></i>MY
+                                                ACCOUNT</a></li>
+                                        <li><a class="dropdown-item" href="#"><i class="fa-regular fa-heart"></i>MY
+                                                WISHLIST</a></li>
+                                        <li><a class="dropdown-item" href="#"><i
+                                                    class="fa-solid fa-arrow-right-arrow-left"></i>COMPARE</a></li>
+                                        <li><a class="dropdown-item" href="#"><i
+                                                    class="fa-solid fa-check"></i>CHECKOUT</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="#"><i
+                                                    class="fa-solid fa-unlock"></i>LOGIN</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="register.html"><i
+                                                    class="fa-solid fa-user-plus"></i>CREATE AN ACCOUNT</a></li>
+                                    </ul>
+                                </div>
+                                <p class="text-center m-0 p-0"> <a class="text-decoration-none text-success"
+                                        href="login.html">LOGIN</a> / <a class="text-decoration-none text-success"
+                                        href="register.html">JOIN</a></p>
+
+                            </div>
+
+
+                            <div class="dropdown ">
+                                <div class="dropdown-toggle d-flex" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <div class="icon"><i class="fa-solid fa-cart-shopping"></i>
+                                        <div class="notification">6</div>
+                                    </div>
+                                    <div class="text d-flex flex-column">
+                                        MY CART
+                                        <span><a href="">1000 USA</a></span>
+                                    </div>
+                                </div>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- /header -->
+    <!-- ---------- -->
+
+
+    <!-- ---------- -->
+    <!-- navbar -->
+    <div class="nav-part">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-start h-100" tabindex="2" id="navbarOffcanvasLg"
+                    aria-labelledby="navbarOffcanvasLgLabel">
+
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <ul class="navbar-nav  mb-2 mb-lg-0 navbar-nav-scroll">
+                        <li class="nav-item Category ">
+                            <div class="Category-part">
+                                <button type="button" class="btn " data-bs-toggle="dropdown"
+                                    aria-expanded="false">CATEGORY<i class="fa-solid fa-bars-staggered"></i></button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">MEN'S CLOTHING</a></li>
+                                    <li><a class="dropdown-item" href="#">COMPUTER & OFFICE</a></li>
+                                    <li><a class="dropdown-item" href="#">CONSUMER ELECTRONICS</a></li>
+                                    <li><a class="dropdown-item" href="#">JEWELRY & WATCHES</a></li>
+                                    <li><a class="dropdown-item" href="#">BALES & SHOES</a></li>
+                                    <li><a class="dropdown-item" href="category.html">VIEW ALL</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">SHOP</a>
+                        </li>
+                        <li class="nav-item dropdown has-megamenu ">
+                            <a class="nav-link dropdown-toggle " href="#" data-bs-toggle="dropdown"> WOMEN
+                            </a>
+                            <div class="dropdown-menu megamenu banner" role="menu">
+                                <div class="row">
+                                    <div class="col-6 col-lg-4">
+                                        <div class="col-megamenu">
+                                            <h6 class="title">CATEGORY</h6>
+                                            <ul class="list-unstyled">
+                                                <li><a href="#">Women clothing</a></li>
+                                                <li><a href="#">men clothing</a></li>
+                                                <li><a href="#">phones & accessories</a></li>
+                                                <li><a href="#">jewelry & watches</a></li>
+                                                <li><a href="#">bags & shoes</a></li>
+
+                                            </ul>
+                                        </div>
+
+
+                                    </div>
+
+                                    <div class="col-lg-4 col-6">
+                                        <div class="col-megamenu">
+                                            <h6 class="title">CATEGORY</h6>
+                                            <ul class="list-unstyled">
+                                                <li><a href="#">Women clothing</a></li>
+                                                <li><a href="#">men clothing</a></li>
+                                                <li><a href="#">phones & accessories</a></li>
+                                                <li><a href="#">jewelry & watches</a></li>
+                                                <li><a href="#">bags & shoes</a></li>
+
+                                            </ul>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-lg-4 col-6">
+                                        <div class="col-megamenu">
+                                            <h6 class="title">CATEGORY</h6>
+                                            <ul class="list-unstyled">
+                                                <li><a href="#">Women clothing</a></li>
+                                                <li><a href="#">men clothing</a></li>
+                                                <li><a href="#">phones & accessories</a></li>
+                                                <li><a href="#">jewelry & watches</a></li>
+                                                <li><a href="#">bags & shoes</a></li>
+
+                                            </ul>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+
+                                <hr>
+                                <img src="photo/main-imgs/banner05.jpg" alt="" class="woman">
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown has-megamenu">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"> MEN </a>
+                            <div class="dropdown-menu megamenu banner" role="menu">
+                                <div class="row g-3">
+                                    <div class="col-lg-3 col-12">
+                                        <div class="col-megamenu">
+                                            <img src="./photo/main-imgs/banner04.jpg" alt="" class="img-banner">
+                                            <hr>
+                                            <h6 class="title">CATEGORY</h6>
+                                            <ul class="list-unstyled">
+                                                <li><a href="#">Women clothing</a></li>
+                                                <li><a href="#">men clothing</a></li>
+                                                <li><a href="#">phones & accessories</a></li>
+                                                <li><a href="#">jewelry & watches</a></li>
+                                                <li><a href="#">bags & shoes</a></li>
+
+                                            </ul>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-lg-3 col-12">
+                                        <div class="col-megamenu">
+                                            <img src="./photo/main-imgs/banner05.jpg" alt="" class="img-banner">
+                                            <hr>
+                                            <h6 class="title">CATEGORY</h6>
+                                            <ul class="list-unstyled">
+                                                <li><a href="#">Women clothing</a></li>
+                                                <li><a href="#">men clothing</a></li>
+                                                <li><a href="#">phones & accessories</a></li>
+                                                <li><a href="#">jewelry & watches</a></li>
+                                                <li><a href="#">bags & shoes</a></li>
+
+                                            </ul>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-lg-3 col-12">
+                                        <div class="col-megamenu">
+                                            <img src="./photo/main-imgs/banner08.jpg" alt="" class="img-banner">
+                                            <hr>
+                                            <h6 class="title">CATEGORY</h6>
+                                            <ul class="list-unstyled">
+                                                <li><a href="#">Women clothing</a></li>
+                                                <li><a href="#">men clothing</a></li>
+                                                <li><a href="#">phones & accessories</a></li>
+                                                <li><a href="#">jewelry & watches</a></li>
+                                                <li><a href="#">bags & shoes</a></li>
+
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-3 col-12">
+                                        <div class="col-megamenu">
+                                            <img src="./photo/main-imgs/banner06.jpg" alt="" class="img-banner">
+                                            <hr>
+                                            <h6 class="title">CATEGORY</h6>
+                                            <ul class="list-unstyled">
+                                                <li><a href="#">Women clothing</a></li>
+                                                <li><a href="#">men clothing</a></li>
+                                                <li><a href="#">phones & accessories</a></li>
+                                                <li><a href="#">jewelry & watches</a></li>
+                                                <li><a href="#">bags & shoes</a></li>
+
+                                            </ul>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">SALES</a>
+                        </li>
+                        <li class="nav-item dropdown has-megamenu">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"> PAGES
+                            </a>
+                            <div class="dropdown-menu megamenu banner" role="menu">
+                                <div class="row g-3">
+                                    <div class="col-lg-3 col-6">
+                                        <div class="col-megamenu">
+                                            <img src="./photo/main-imgs/banner06.jpg" alt="" class="img-banner">
+                                            <hr>
+                                            <h6 class="title">CATEGORY</h6>
+                                            <ul class="list-unstyled">
+                                                <li><a href="#">Women clothing</a></li>
+                                                <li><a href="#">men clothing</a></li>
+                                                <li><a href="#">phones & accessories</a></li>
+                                                <li><a href="#">jewelry & watches</a></li>
+                                                <li><a href="#">bags & shoes</a></li>
+
+                                            </ul>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-lg-3 col-6">
+                                        <div class="col-megamenu">
+                                            <img src="./photo/main-imgs/banner07.jpg" alt="" class="img-banner">
+                                            <hr>
+                                            <h6 class="title">CATEGORY</h6>
+                                            <ul class="list-unstyled">
+                                                <li><a href="#">Women clothing</a></li>
+                                                <li><a href="#">men clothing</a></li>
+                                                <li><a href="#">phones & accessories</a></li>
+                                                <li><a href="#">jewelry & watches</a></li>
+                                                <li><a href="#">bags & shoes</a></li>
+
+                                            </ul>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-lg-3 col-6">
+                                        <div class="col-megamenu">
+                                            <img src="./photo/main-imgs/banner08.jpg" alt="" class="img-banner">
+                                            <hr>
+                                            <h6 class="title">CATEGORY</h6>
+                                            <ul class="list-unstyled">
+                                                <li><a href="#">Women clothing</a></li>
+                                                <li><a href="#">men clothing</a></li>
+                                                <li><a href="#">phones & accessories</a></li>
+                                                <li><a href="#">jewelry & watches</a></li>
+                                                <li><a href="#">bags & shoes</a></li>
+
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-3 col-6">
+                                        <div class="col-megamenu">
+                                            <img src="./photo/main-imgs/banner09.jpg" alt="" class="img-banner">
+                                            <hr>
+                                            <h6 class="title">CATEGORY</h6>
+                                            <ul class="list-unstyled">
+                                                <li><a href="#">Women clothing</a></li>
+                                                <li><a href="#">men clothing</a></li>
+                                                <li><a href="#">phones & accessories</a></li>
+                                                <li><a href="#">jewelry & watches</a></li>
+                                                <li><a href="#">bags & shoes</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- navbar -->
+    <!-- ---------- -->
+
     <div class="register">
         <div class="top">
             <div class="container">
@@ -25,7 +408,7 @@
 
         </div>
         <div class="container w-75 mt-5">
-            <h3 class="fw-bold">LOGIN</h3>
+            <h3 class="fw-bold">REGISTER</h3>
             <div class="hr position-relative">
                 <p></p>
                 <hr>
@@ -43,8 +426,7 @@
                     </div>
 
                     <div class="row mb-3  justify-content-between ">
-                        <div class="col-12 col-md-6"> <input type="text" class="form-control name "
-                                placeholder="email">
+                        <div class="col-12 col-md-6"> <input type="text" class="form-control name " placeholder="email">
                         </div>
                         <div class="col-12 col-md-6"><input type="text" class="form-control name "
                                 placeholder="country"></div>
@@ -56,8 +438,8 @@
                                 placeholder="password">
                         </div>
 
-                        <div class="col-12 col-md-6"><input type="text" class="form-control name "
-                                placeholder="phone"></div>
+                        <div class="col-12 col-md-6"><input type="text" class="form-control name " placeholder="phone">
+                        </div>
 
                     </div>
 
@@ -70,8 +452,8 @@
 
                     <div class="mb-3 form-check d-flex justify-content-between">
                         <div>
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1">I Want to Receive Time Mall </label>
+                            <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                            <label class="form-check-label" for="exampleCheck2">I Want to Receive Time Mall </label>
                         </div>
                     </div>
                     <button type="" class="btn text-center w-100">CREATE ACCOUNT</button>
@@ -81,8 +463,8 @@
         </div>
     </div>
 
-    
-    <div class="suggested">
+
+    <div class="suggested mb-5">
         <div class="container">
             <h3 class="fw-bold fs-3">suggested</h3>
             <div class="hr position-relative">
@@ -91,79 +473,140 @@
             </div>
             <div class="row">
                 <div class="col-12 col-mf-6 col-lg-4 d-flex justify-content-between">
-                    <div>
+                    <a class="click text-decoration-none text-black 1" href="">
                         <img src="photo/new-collection/item2.jpg" width="65px" height="85px" alt="product">
                         <h6>23.3 EGP</h6>
                         <h5>product </h5>
-                    </div>
-                    <div>
+                    </a>
+                    <a class="click text-decoration-none text-black" href="">
                         <img src="photo/new-collection/item3.jpg" width="65px" height="85px" alt="product">
                         <h6>23.3 EGP</h6>
                         <h5>product </h5>
-                    </div>
-                    <div>
+                    </a>
+                    <a class="click text-decoration-none text-black" href="">
                         <img src="photo/new-collection/item4.jpg" width="65px" height="85px" alt="product">
                         <h6>23.3 EGP</h6>
                         <h5>product </h5>
-                    </div>
-                    <div>
+                    </a>
+                    <a class="click text-decoration-none text-black" href="">
                         <img src="photo/new-collection/coll-banner.jpg" width="65px" height="85px" alt="product">
                         <h6>23.3 EGP</h6>
                         <h5>product</h5>
-                    </div>
+                    </a>
                 </div>
                 <div class="col-12 col-mf-6 col-lg-4 d-flex justify-content-between">
-                    <div>
+                    <a class="click text-decoration-none text-black" href="">
                         <img src="photo/gallary/gl1.jpg" width="65px" height="85px" alt="product">
                         <h6>23.3 EGP</h6>
                         <h5>product </h5>
-                    </div>
-                    <div>
+                    </a>
+                    <a class="click text-decoration-none text-black" href="">
                         <img src="photo/gallary/gl10.jpg" width="65px" height="85px" alt="product">
                         <h6>23.3 EGP</h6>
                         <h5>product </h5>
-                    </div>
-                    <div>
+                    </a>
+                    <a class="click text-decoration-none text-black" href="">
                         <img src="photo/gallary/gl11.jpg" width="65px" height="85px" alt="product">
                         <h6>23.3 EGP</h6>
                         <h5>product </h5>
-                    </div>
-                    <div>
+                    </a>
+                    <a class="click text-decoration-none text-black" href="">
                         <img src="photo/gallary/gl12.jpg" width="65px" height="85px" alt="product">
                         <h6>23.3 EGP</h6>
                         <h5>product</h5>
-                    </div>
+                    </a>
                 </div>
                 <div class="col-12 col-mf-6 col-lg-4 d-flex justify-content-between">
-                    <div>
+                    <a class="click text-decoration-none text-black" href="">
                         <img src="photo/gallary/gl13.jpg" width="65px" height="85px" alt="product">
                         <h6>23.3 EGP</h6>
                         <h5>product </h5>
-                    </div>
-                    <div>
+                    </a>
+                    <a class="click text-decoration-none text-black" href="">
                         <img src="photo/gallary/gl17.jpg" width="65px" height="85px" alt="product">
                         <h6>23.3 EGP</h6>
                         <h5>product </h5>
-                    </div>
-                    <div>
+                    </a>
+                    <a class="click text-decoration-none text-black" href="">
                         <img src="photo/gallary/gl14.jpg" width="65px" height="85px" alt="product">
                         <h6>23.3 EGP</h6>
                         <h5>product </h5>
-                    </div>
-                    <div>
+                    </a>
+                    <a class="click text-decoration-none text-black" href="">
                         <img src="photo/gallary/gl20.jpg" width="65px" height="85px" alt="product">
                         <h6>23.3 EGP</h6>
                         <h5>product</h5>
-                    </div>
+                    </a>
                 </div>
 
             </div>
         </div>
     </div>
 
+    <!-------------->
+    <!-- footer-->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-3 one ">
+                    <p class="">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis ipsa</p>
+                    <div class="icons d-flex justify-content-between ">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-google-plus-g"></i>
+
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3  ">
+                    <h6 class="fw-bold mb-4">ABOUT US</h6>
+                    <p> <i class="fa-solid fa-location-dot"></i>adipisicing elit. Fuga blanditiis ducimus id et
+                        alias
+                        minima suscipit aliquam animi ratione, ipsam laboriosam accusamus iste cupiditate aut hic a
+                    </p>
+                    <div>
+                        <p><i class="fa-solid fa-phone"></i> 01159450623</p>
+                        <p class="mt-0"><i class="fa-solid fa-envelope"></i><a href="Ahmed.w632@yahoo.com">
+                                Ahmed.w632@yahoo.com</a></p>
+
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3  ">
+                    <h6 class="fw-bold mb-4">CUSTOMER SERVICE</h6>
+                    <a class="d-block text-decoration-none text-dark" href="">ABOUT US</a>
+                    <a class="d-block text-decoration-none text-dark" href="">SHIaING & RATING</a>
+                    <a class="d-block text-decoration-none text-dark" href="">SHIaING GIDE</a>
+                    <a class="d-block text-decoration-none text-dark" href="">FAQ</a>
+
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 ">
+                    <h6 class="fw-bold mb-4">STAY CONNECTED</h6>
+                    <p>blanditiis ducimus id et alias
+                        minima suscipit aliquam animi ratione,</p>
+                    <form action="">
+                        <input type="text" class="form-control mt-3 rounded-0" placeholder="enter email addres">
+                        <button class="btn mt-3">JONE NEWSLETTER</button>
+                    </form>
+                </div>
+            </div>
+            <hr class="m-0 p-0 mt-4" />
+        </div>
+    </footer>
+    <!-- /footer-->
+    <!---------------------->
+
+    <!-------------->
+    <!-- copyrayting-->
+    <div class="copyrayting">
+        <div class="container">
+            <P class="m-0 ">© Copyright 2023 | AHMED MOHAMED</P>
+        </div>
+    </div>
+    <!-- copyrayting-->
+    <!-------------->
     <script src="bootstrap-5.3.1-dist/js/bootstrap.bundle.js"></script>
     <script src="js/code.jquery.com_jquery-3.7.1.min.js"></script>
+    <script src="js/register.js"></script>
 </body>
 
 </html>
-
